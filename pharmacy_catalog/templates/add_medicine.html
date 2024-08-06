@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>Add Medicine</h1>
+<form method="post">
+    <label for="name">Medicine Name:</label>
+    <input type="text" id="name" name="name" required>
+    <label for="description">Description:</label>
+    <textarea id="description" name="description"></textarea>
+    <label for="price">Price:</label>
+    <input type="number" id="price" name="price" step="0.01" required>
+    <button type="submit">Add Medicine</button>
+</form>
+{% endblock %}
